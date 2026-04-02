@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>社長の右腕AI | Sakamoto Growth Partners</title>
+  <meta name="description" content="社長しか判断できない会社を、止まらない会社へ。社長の判断基準を整理し、現場で再現できる仕組みに落とし込む『社長の右腕AI』のLPです。" />
+  <meta property="og:title" content="社長の右腕AI | Sakamoto Growth Partners" />
+  <meta property="og:description" content="社長しか判断できない会社を、止まらない会社へ。社長の判断基準を現場で再現できる仕組みに変える支援。" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,0.08);
+      --panel-strong: rgba(255,255,255,0.12);
+      --line: rgba(255,255,255,0.12);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --subtle: #94a3b8;
+      --brand: #38bdf8;
+      --brand-2: #60a5fa;
+      --accent: #22c55e;
+      --shadow: 0 20px 60px rgba(2,6,23,0.45);
+      --radius: 20px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(56,189,248,0.12), transparent 28%),
+        radial-gradient(circle at left 20%, rgba(34,197,94,0.10), transparent 26%),
+        linear-gradient(180deg, #0b1020 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.12);
+      color: #bae6fd;
+      border: 1px solid rgba(56,189,248,0.24);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    header.hero {
+      padding: 72px 0 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    .panel {
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-copy {
+      padding: 32px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 60px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin: 18px 0 18px;
+    }
+    .lead {
+      font-size: clamp(16px, 2.3vw, 20px);
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+    .hero-sub {
+      color: var(--subtle);
+      font-size: 15px;
+      margin: 0 0 28px;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 0 0 16px;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #02111b;
+      box-shadow: 0 10px 24px rgba(56,189,248,0.30);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .micro-note {
+      font-size: 13px;
+      color: var(--subtle);
+    }
+    .hero-side {
+      padding: 28px;
+      display: grid;
+      gap: 16px;
+    }
+    .stat {
+      padding: 18px 18px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+    }
+    .stat strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      color: #e0f2fe;
+    }
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .hero-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    section {
+      padding: 26px 0;
+    }
+    .section-title {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      margin: 0 0 10px;
+    }
+    .section-lead {
+      margin: 0 0 24px;
+      color: var(--muted);
+      max-width: 800px;
+    }
+    .cards-3, .cards-2, .cards-4 {
+      display: grid;
+      gap: 18px;
+    }
+    .cards-3 { grid-template-columns: repeat(3, 1fr); }
+    .cards-2 { grid-template-columns: repeat(2, 1fr); }
+    .cards-4 { grid-template-columns: repeat(4, 1fr); }
+    .card {
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: var(--shadow);
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .card p, .card li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .card ul { margin: 12px 0 0; padding-left: 18px; }
+    .steps .card { position: relative; overflow: hidden; }
+    .step-no {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.14);
+      color: #bae6fd;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .pricing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .price-card {
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow);
+    }
+    .price-main {
+      font-size: clamp(34px, 6vw, 54px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin: 8px 0 14px;
+    }
+    .price-card ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    details {
+      border-radius: 16px;
+      padding: 18px 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details p { color: var(--muted); margin: 12px 0 0; }
+    .cta-band {
+      padding: 28px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, rgba(56,189,248,0.14), rgba(34,197,94,0.10));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .contact-note {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .contact-list {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    form {
+      display: grid;
+      gap: 14px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    label {
+      display: grid;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      border-radius: 14px;
+      padding: 14px 14px;
+      font: inherit;
+      outline: none;
+    }
+    input::placeholder, textarea::placeholder { color: #8fa0b8; }
+    input:focus, select:focus, textarea:focus {
+      border-color: rgba(56,189,248,0.55);
+      box-shadow: 0 0 0 3px rgba(56,189,248,0.14);
+    }
+    textarea { min-height: 160px; resize: vertical; }
+    .checkbox {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .checkbox input {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: #38bdf8;
+    }
+    .error {
+      color: #fecaca;
+      font-size: 13px;
+      min-height: 18px;
+    }
+    .form-foot {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    footer {
+      padding: 34px 0 54px;
+      color: var(--subtle);
+      font-size: 14px;
+    }
+    .kicker {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #bae6fd;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .pricing,
+      .contact-grid,
+      .cards-3,
+      .cards-4,
+      .cards-2,
+      .field-grid {
+        grid-template-columns: 1fr;
+      }
+      header.hero { padding-top: 52px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="panel hero-copy">
+        <div class="badge">法人限定 / B2B支援</div>
+        <h1>社長しか判断できない会社を、<br>止まらない会社へ。</h1>
+        <p class="lead">“右腕がほしいけど、簡単には見つからない”──そんな会社のために、社長の判断基準・優先順位・考え方を整理し、現場で再現できる仕組みに落とし込むのが、<strong>社長の右腕AI</strong>です。</p>
+        <p class="hero-sub">営業、見積、顧客対応、採用、案件判断。<br>「結局、最後は社長判断」になっている業務を見える化し、任せてもズレにくい形へ整えます。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact-form">法人として問い合わせる</a>
+          <a class="btn btn-secondary" href="#pricing">5万円のミニ診断を見る</a>
+        </div>
+        <p class="micro-note">対象：法人代表・役員・事業責任者の方。個人の方からのご相談は受け付けていません。</p>
+      </div>
+
+      <div class="panel hero-side">
+        <div class="stat">
+          <strong>社長依存の見える化</strong>
+          <span>どの業務が「社長しか決められない」状態なのかを整理します。</span>
+        </div>
+        <div class="stat">
+          <strong>判断基準の言語化</strong>
+          <span>値付け、優先順位、受注判断など、暗黙知を共有可能な形にします。</span>
+        </div>
+        <div class="stat">
+          <strong>現場への実装</strong>
+          <span>AIと業務フローを通じて、任せてもズレにくい運用へ落とし込みます。</span>
+        </div>
+        <ul class="hero-list">
+          <li>人を増やしても社長に判断が戻ってくる</li>
+          <li>任せたいのに任せるとズレる</li>
+          <li>相談しないと決められない現場を減らしたい</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <span class="kicker">課題</span>
+        <h2 class="section-title">こんな状態になっていませんか。</h2>
+        <p class="section-lead">多くの中小企業では、業務量そのものよりも「判断が社長に集中していること」がボトルネックになっています。</p>
+        <div class="cards-3">
+          <article class="card">
+            <h3>任せるとズレる</h3>
+            <p>現場に任せると判断がブレて、最終的に社長が差し戻す。結果として、任せるほど遅くなる状態。</p>
+          </article>
+          <article class="card">
+            <h3>相談待ちで止まる</h3>
+            <p>営業、見積、顧客対応、採用。毎回の確認が必要で、現場が自走しにくい状態。</p>
+          </article>
+          <article class="card">
+            <h3>採用しても楽にならない</h3>
+            <p>人を増やしても、判断基準が共有されていないため、結局社長の負担が減らない状態。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="kicker">提供価値</span>
+        <h2 class="section-title">社長の右腕AIで、何が変わるのか。</h2>
+        <p class="section-lead">単なるAIツール導入ではありません。社長の頭の中にある判断を、現場で再現できる状態へ変える支援です。</p>
+        <div class="cards-3">
+          <article class="card">
+            <h3>1. 社長依存の業務を見える化</h3>
+            <p>どの判断が社長に集中しているのかを棚卸しし、止まっているポイントを特定します。</p>
+          </article>
+          <article class="card">
+            <h3>2. 判断基準を整理・言語化</h3>
+            <p>価格の決め方、案件の受け方、優先順位の付け方などを構造化し、共有可能にします。</p>
+          </article>
+          <article class="card">
+            <h3>3. 現場で回る仕組みに実装</h3>
+            <p>AI・テンプレート・運用ルールまで落とし込み、任せてもズレにくい状態を作ります。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <span class="kicker">進め方</span>
+        <h2 class="section-title">まずは5万円のミニ診断から。</h2>
+        <p class="section-lead">いきなり大きく導入しません。まずは、どこに社長依存があるかを見える化し、どこから仕組みにすべきかを整理します。</p>
+        <div class="cards-4">
+          <article class="card">
+            <div class="step-no">1</div>
+            <h3>ヒアリング</h3>
+            <p>社長しか決められない業務、差し戻しが多い業務、現場が止まりやすい業務を確認します。</p>
+          </article>
+          <article class="card">
+            <div class="step-no">2</div>
+            <h3>診断</h3>
+            <p>社長依存の構造、属人化している判断、仕組みにできる領域を整理します。</p>
+          </article>
+          <article class="card">
+            <div class="step-no">3</div>
+            <h3>提案</h3>
+            <p>何をAI化・テンプレ化・運用設計すべきかを、優先順位付きで提示します。</p>
+          </article>
+          <article class="card">
+            <div class="step-no">4</div>
+            <h3>実装支援</h3>
+            <p>必要に応じて、社長の右腕AIとして使える仕組みを小さく実装していきます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container pricing">
+        <div class="price-card">
+          <span class="kicker">入口商品</span>
+          <h2 class="section-title" style="margin-top:0;">社長の右腕AI ミニ診断</h2>
+          <div class="price-main">¥50,000</div>
+          <p class="section-lead" style="margin-bottom:0;">法人向けの初回診断メニューです。現在の業務構造を整理し、どこに社長依存があるかを可視化します。</p>
+        </div>
+        <div class="price-card">
+          <h3 style="margin-top:0; font-size:22px;">含まれる内容</h3>
+          <ul>
+            <li>60〜90分のヒアリング</li>
+            <li>社長依存業務の棚卸し</li>
+            <li>判断集中ポイントの整理</li>
+            <li>仕組み化優先順位の提示</li>
+            <li>今後の実装イメージの提案</li>
+          </ul>
+          <p class="micro-note" style="margin-top:16px;">※ 対象は法人のみです。個人・学生・個人事業の単発相談は対象外です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="kicker">よくある質問</span>
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>AIツールを入れるだけの支援ですか？</summary>
+            <p>違います。目的はAI導入そのものではなく、社長の判断基準を整理し、現場で再現できる状態を作ることです。必要に応じてAIも使いますが、本質は業務設計と判断基準の実装です。</p>
+          </details>
+          <details>
+            <summary>まだ何を仕組みにすべきかわかっていません。</summary>
+            <p>その状態でも大丈夫です。まずはミニ診断で、どこに社長依存が集中しているかを整理し、優先順位をつけます。</p>
+          </details>
+          <details>
+            <summary>個人でも申し込めますか？</summary>
+            <p>現在は法人限定です。代表・役員・事業責任者の方からのご相談のみ受け付けています。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-band">
+        <div class="contact-grid">
+          <div>
+            <span class="kicker">お問い合わせ</span>
+            <h2 class="section-title" style="margin-top:0;">法人向けお問い合わせフォーム</h2>
+            <p class="contact-note">対象は法人の代表・役員・事業責任者の方です。<br>フォーム送信後、入力内容をもとにメール作成画面が開きます。</p>
+            <ul class="contact-list">
+              <li>会社名・会社URL・役職などをもとに簡易判定します</li>
+              <li>Gmail / Yahoo / Outlook などのフリーメールは受け付けていません</li>
+              <li>個人目的の問い合わせは対象外です</li>
+            </ul>
+          </div>
+
+          <div class="panel" style="padding:24px;" id="contact-form">
+            <form id="corporateInquiryForm" novalidate>
+              <div class="field-grid">
+                <label>会社名 *
+                  <input type="text" id="companyName" placeholder="株式会社〇〇" required>
+                </label>
+                <label>会社URL *
+                  <input type="url" id="companyUrl" placeholder="https://example.com" required>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label>お名前 *
+                  <input type="text" id="personName" placeholder="坂本 直哉" required>
+                </label>
+                <label>役職 *
+                  <input type="text" id="jobTitle" placeholder="代表取締役 / 事業責任者" required>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label>法人メールアドレス *
+                  <input type="email" id="businessEmail" placeholder="name@company.co.jp" required>
+                </label>
+                <label>従業員規模 *
+                  <select id="employeeSize" required>
+                    <option value="">選択してください</option>
+                    <option>1〜5名</option>
+                    <option>6〜20名</option>
+                    <option>21〜50名</option>
+                    <option>51〜100名</option>
+                    <option>101名以上</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label>業種 *
+                  <input type="text" id="industry" placeholder="建設業 / 不動産 / 製造業 など" required>
+                </label>
+                <label>相談テーマ
+                  <input type="text" id="theme" placeholder="見積判断 / 営業対応 / 採用判断 など">
+                </label>
+              </div>
+
+              <label>現在の状況・相談内容 *
+                <textarea id="message" placeholder="社長しか判断できない業務、任せるとズレる業務、止まりやすい業務などをご記入ください。" required></textarea>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" id="corporateCheck" required>
+                <span>私は法人の代表・役員・事業責任者として問い合わせています。個人としての問い合わせではありません。 *</span>
+              </label>
+
+              <div class="error" id="formError"></div>
+
+              <div class="form-foot">
+                <span class="micro-note">送信先：naoya.sakamoto.888@gmail.com</span>
+                <button type="submit" class="btn btn-primary">法人として問い合わせる</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+        <span>© Sakamoto Growth Partners</span>
+        <span>社長の判断を、現場で再現できる仕組みに。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const form = document.getElementById('corporateInquiryForm');
+      const errorEl = document.getElementById('formError');
+      const FREE_MAIL_DOMAINS = [
+        'gmail.com', 'googlemail.com', 'yahoo.co.jp', 'yahoo.com', 'ymail.com', 'outlook.com',
+        'hotmail.com', 'live.jp', 'live.com', 'msn.com', 'icloud.com', 'me.com', 'mac.com',
+        'aol.com', 'proton.me', 'protonmail.com', 'zoho.com'
+      ];
+
+      function value(id) {
+        return document.getElementById(id).value.trim();
+      }
+
+      function isFreeMail(email) {
+        const domain = (email.split('@')[1] || '').toLowerCase();
+        return FREE_MAIL_DOMAINS.includes(domain);
+      }
+
+      function buildTemplate(data) {
+        return [
+          '社長の右腕AI ミニ診断について問い合わせします。',
+          '',
+          '【会社名】',
+          data.companyName,
+          '',
+          '【会社URL】',
+          data.companyUrl,
+          '',
+          '【お名前】',
+          data.personName,
+          '',
+          '【役職】',
+          data.jobTitle,
+          '',
+          '【法人メールアドレス】',
+          data.businessEmail,
+          '',
+          '【従業員規模】',
+          data.employeeSize,
+          '',
+          '【業種】',
+          data.industry,
+          '',
+          '【相談テーマ】',
+          data.theme || '未記入',
+          '',
+          '【現在の状況・相談内容】',
+          data.message,
+          '',
+          '※ 法人の代表・役員・事業責任者として問い合わせています。'
+        ].join('\n');
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errorEl.textContent = '';
+
+        const data = {
+          companyName: value('companyName'),
+          companyUrl: value('companyUrl'),
+          personName: value('personName'),
+          jobTitle: value('jobTitle'),
+          businessEmail: value('businessEmail'),
+          employeeSize: value('employeeSize'),
+          industry: value('industry'),
+          theme: value('theme'),
+          message: value('message')
+        };
+        const corporateCheck = document.getElementById('corporateCheck').checked;
+
+        if (!data.companyName || !data.companyUrl || !data.personName || !data.jobTitle || !data.businessEmail || !data.employeeSize || !data.industry || !data.message) {
+          errorEl.textContent = '必須項目をすべて入力してください。';
+          return;
+        }
+
+        if (!/^https?:\/\//i.test(data.companyUrl)) {
+          errorEl.textContent = '会社URLは https:// から始まる形式で入力してください。';
+          return;
+        }
+
+        if (isFreeMail(data.businessEmail)) {
+          errorEl.textContent = '法人ドメインのメールアドレスをご入力ください。フリーメールは受け付けていません。';
+          return;
+        }
+
+        if (!corporateCheck) {
+          errorEl.textContent = '法人としての問い合わせ確認にチェックを入れてください。';
+          return;
+        }
+
+        const subject = encodeURIComponent('【法人問い合わせ】社長の右腕AI ミニ診断');
+        const body = encodeURIComponent(buildTemplate(data));
+        const mailto = 'mailto:naoya.sakamoto.888@gmail.com?subject=' + subject + '&body=' + body;
+        window.location.href = mailto;
+      });
+    })();
+  </script>
+</body>
+</html>
