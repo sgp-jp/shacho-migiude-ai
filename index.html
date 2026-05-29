@@ -1,324 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SGP | 競合と同じ支援は、しない。地域密着AI・DX・営業支援</title>
-  <meta name="description" content="合同会社SGPは、仙台圏の地域企業向けにAI・Web・営業導線の改善を一気通貫で支援します。直接競合となる企業への同時支援を避け、競争優位に関わる支援を条件付きで1社限定に設計します。" />
-  <meta property="og:title" content="SGP | 競合と同じ支援は、しない。" />
-  <meta property="og:description" content="仙台発。地域密着のAI・DX・営業支援。競争優位に関わる支援は、同一業界・同一業種・同一商圏で原則1社限定。" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>合同会社SGP | 地域企業の成長を、戦略・AI・Web・実行で前に進める。</title>
+  <meta name="description" content="合同会社SGP / Sakamoto Growth Partnersは、仙台を拠点に、AI活用・Web改善・業務DX・営業導線設計を一気通貫で支援する成長パートナーです。" />
+  <meta property="og:title" content="合同会社SGP | Sakamoto Growth Partners" />
+  <meta property="og:description" content="仙台発。AI・Web・営業・業務改善を一気通貫で支援する地域企業の成長パートナー。" />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#003B5C" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--teal:#00BFA6;--navy:#003B5C;--navy2:#002A42;--ink:#0B2A3D;--muted:#5E7180;--line:#D9E7EF;--bg:#F6FAFC;--shadow:0 18px 50px rgba(0,59,92,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);line-height:1.8;background:#fff;letter-spacing:.02em}a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.header-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px}.brand b{font-family:Georgia,serif;font-size:48px;color:var(--navy);line-height:1}.brand span{font-family:Inter,sans-serif;font-size:12px;font-weight:900;line-height:1.1;color:var(--navy)}.nav{display:flex;gap:24px;margin-left:auto;font-size:14px;font-weight:900;color:var(--navy)}.nav a:hover{color:var(--teal)}.cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:10px;background:var(--teal);color:#fff;font-weight:900;box-shadow:0 12px 26px rgba(0,191,166,.22)}.hero{position:relative;overflow:hidden;padding:82px 0 92px;background:linear-gradient(180deg,#fff,var(--bg))}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(0,191,166,.15),transparent 28%),repeating-linear-gradient(90deg,rgba(0,59,92,.045) 0 1px,transparent 1px 110px),repeating-linear-gradient(0deg,rgba(0,59,92,.035) 0 1px,transparent 1px 58px)}.hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center}.badge{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border-radius:999px;background:#fff;border:1px solid rgba(0,191,166,.4);font-weight:900;color:var(--navy);box-shadow:0 10px 30px rgba(0,59,92,.08)}.badge:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 6px rgba(0,191,166,.12)}h1{margin:24px 0 18px;color:var(--navy);font-size:clamp(40px,5vw,70px);line-height:1.12;font-weight:900}.lead{font-size:20px;font-weight:800;color:#18394D;max-width:720px}.text{color:#425B6C;font-weight:600;max-width:720px}.actions{display:flex;gap:16px;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:10px;font-weight:900}.btn.primary{background:var(--teal);color:#fff;box-shadow:0 18px 36px rgba(0,191,166,.24)}.btn.secondary{background:#fff;color:var(--navy);border:1px solid #9AB2C2;box-shadow:0 10px 30px rgba(0,59,92,.08)}.visual{position:relative;min-height:510px}.panel{position:absolute;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.main-panel{left:20px;top:0;width:420px;height:350px;padding:24px}.panel-head{display:flex;justify-content:space-between;font-family:Inter,sans-serif;font-weight:900;color:var(--navy)}.system{position:relative;margin-top:18px;height:265px;border-radius:16px;background:linear-gradient(135deg,#EFFAFA,#fff);overflow:hidden}.system:before,.system:after{content:"";position:absolute;left:50%;top:50%;border:1px solid rgba(0,191,166,.22);border-radius:50%;transform:translate(-50%,-50%)}.system:before{width:245px;height:245px}.system:after{width:165px;height:165px;background:rgba(0,191,166,.05)}.core{position:absolute;left:50%;top:50%;z-index:2;width:110px;height:110px;border-radius:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;font-family:Inter,sans-serif;font-weight:900}.orb{position:absolute;z-index:3;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid rgba(0,191,166,.35);color:var(--teal);font-family:Inter,sans-serif;font-weight:900;font-size:13px;box-shadow:0 10px 28px rgba(0,59,92,.10)}.s{left:34px;top:38px}.a{right:42px;top:50px}.w{right:34px;bottom:50px}.g{left:40px;bottom:48px}.d{left:50%;bottom:16px;transform:translateX(-50%)}.mini1{right:0;top:54px;width:210px;padding:24px}.mini1 strong,.mini2 strong{display:block;color:var(--teal);font-size:30px;font-weight:900}.mini1 span,.mini2 span,.mini3 span{font-size:13px;color:var(--muted);font-weight:900}.mini2{left:0;bottom:54px;width:290px;padding:24px;color:var(--teal)}.mini2 svg{width:100%;height:76px;margin-top:10px}.mini3{right:10px;bottom:0;width:268px;padding:24px}.mini3 ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}.mini3 li{font-weight:800;color:#284657}.mini3 li:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-right:9px}.section{padding:78px 0}.section.alt{background:var(--bg)}.heading{text-align:center;max-width:880px;margin:0 auto 40px}.kicker{font-family:Inter,sans-serif;color:var(--teal);text-transform:uppercase;letter-spacing:.16em;font-weight:900;font-size:13px}.heading h2,.split h2{margin:8px 0 0;color:var(--navy);font-size:clamp(28px,3.2vw,42px);line-height:1.38;font-weight:900}.heading h2:after{content:"";display:block;width:56px;height:3px;background:var(--teal);border-radius:999px;margin:18px auto 0}.grid{display:grid;gap:24px}.grid.cards5{grid-template-columns:repeat(5,1fr)}.grid.cards3{grid-template-columns:repeat(3,1fr)}.grid.cards4{grid-template-columns:repeat(4,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;box-shadow:0 12px 34px rgba(0,59,92,.08)}.card small{display:inline-flex;width:40px;height:40px;border-radius:50%;align-items:center;justify-content:center;background:rgba(0,191,166,.1);color:var(--teal);font-family:Inter,sans-serif;font-weight:900}.card h3{margin:18px 0 10px;color:var(--navy);font-size:21px;font-weight:900}.card p{margin:0;color:#425B6C;font-weight:650;font-size:14px}.split-section{background:var(--navy);color:#fff}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}.split h2{color:#fff}.split p{margin:0 0 18px;color:#E4F0F4;font-size:17px;font-weight:650}.value h3{font-family:Inter,sans-serif;color:var(--teal);font-size:30px}.value-icon{width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;font-size:28px;font-weight:900}.service{position:relative;min-height:290px}.service.featured{border:2px solid rgba(0,191,166,.55);background:linear-gradient(180deg,#fff,#F0FBFA)}.tag{display:inline-flex;margin-bottom:14px;padding:7px 12px;border-radius:999px;background:rgba(0,191,166,.1);color:var(--teal);font-family:Inter,sans-serif;font-size:12px;font-weight:900}.compare{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border:1px solid #BCD0DC;border-radius:16px;box-shadow:0 12px 34px rgba(0,59,92,.08)}.compare div{padding:18px 22px;border-bottom:1px solid var(--line);font-weight:800}.compare div:nth-child(odd){background:#F8FBFC;border-right:1px solid var(--line)}.compare .head{background:var(--navy)!important;color:#fff;text-align:center}.compare .head.right{background:var(--teal)!important}.message{background:linear-gradient(135deg,rgba(0,59,92,.98),rgba(0,59,92,.86));color:#fff}.message .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#fff}.message .card h2{color:#fff}.message-body p{color:#E9F4F6;font-size:17px}.price strong{display:block;margin-top:18px;color:var(--teal);font-size:22px;font-weight:900}.company-table{border:1px solid #BCD0DC;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px rgba(0,59,92,.08)}.row{display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row b,.row span{padding:18px 22px}.row b{background:#F4FAFC;color:var(--navy)}.row span{font-weight:750;color:#284657}.row a{color:var(--teal);font-weight:900}.final{padding:82px 0;text-align:center;color:#fff;background:radial-gradient(circle at 20% 20%,rgba(0,191,166,.28),transparent 25%),linear-gradient(180deg,rgba(0,191,166,.9),rgba(0,59,92,.96))}.final h2{margin:8px auto 14px;max-width:900px;font-size:clamp(30px,4vw,52px);line-height:1.3}.final p{max-width:800px;margin:0 auto 30px;color:#EAF7F7;font-weight:700}.final .outline{border:1px solid rgba(255,255,255,.75);color:#fff}.final .white{background:#fff;color:var(--teal)}.footer{padding:24px 0;background:var(--navy2);color:#fff}.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer a{margin-left:22px;font-size:13px;opacity:.82}
+    @media(max-width:1080px){.nav{display:none}.hero-grid{grid-template-columns:1fr}.visual{max-width:640px;margin:auto}.grid.cards5,.grid.cards4{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.container{width:min(100% - 32px,640px)}.header-inner{height:68px}.brand b{font-size:38px}.hero{padding:52px 0 60px}h1{font-size:40px}.lead{font-size:17px}.actions{flex-direction:column}.btn{width:100%}.visual{transform:scale(.78);transform-origin:top center;margin-bottom:-120px}.grid.cards5,.grid.cards4,.grid.cards3{grid-template-columns:1fr}.split{grid-template-columns:1fr}.compare{grid-template-columns:1fr}.compare div:nth-child(odd){border-right:0}.row{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.footer a{display:inline-block;margin:8px 10px}}
+  </style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Sakamoto Growth Partners">
-        <span class="brand-mark">SGP</span>
-        <span class="brand-sub">Sakamoto<br>Growth Partners</span>
-      </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#service">サービス</a>
-        <a href="#area">支援領域</a>
-        <a href="#policy">競合配慮方針</a>
-        <a href="#flow">導入の流れ</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
-      <a class="header-cta" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=無料相談の問い合わせ">無料相談する</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">仙台発 / 地域密着 / AI・DX・営業支援</p>
-          <h1>
-            競合と同じ支援は、<br class="pc">しない。
-          </h1>
-          <p class="hero-lead">
-            同一業界・同一業種・同一商圏では、<br>
-            競争優位に関わる支援を<span>原則1社限定。</span>
-          </p>
-          <p class="hero-text">
-            SGPでは、直接競合となる企業への同時支援を避けながら、AI・Web・営業導線の改善を一気通貫で支援します。完全な一律独占ではなく、業態・商圏・支援範囲に応じて個別に設計します。
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=限定枠の確認相談">限定枠を確認する</a>
-            <a class="btn secondary" href="#plans">資料を受け取る</a>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="支援エリアと成長指標のイメージ">
-          <div class="map-card card">
-            <div class="card-title">支援エリア <small>例：宮城県</small></div>
-            <div class="map-illustration">
-              <div class="rings"></div>
-              <div class="pin"></div>
-              <svg viewBox="0 0 360 210" class="abstract-map" role="img" aria-hidden="true">
-                <path d="M40,130 C60,80 90,66 130,82 C154,92 177,54 218,70 C246,82 286,72 324,94 C335,142 298,172 248,158 C216,149 188,176 144,160 C94,142 66,164 40,130Z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="policy-badge card">
-            <p>競合配慮方針</p>
-            <strong>条件付き<br>1社限定</strong>
-          </div>
-          <div class="growth-card card">
-            <div class="card-title">成長実績 <small>売上推移</small></div>
-            <strong>+32%</strong>
-            <svg viewBox="0 0 260 90" role="img" aria-label="右肩上がりの成長チャート">
-              <polyline points="10,75 45,52 82,60 118,36 154,45 194,20 236,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M10,75 L45,52 L82,60 L118,36 L154,45 L194,20 L236,8 L236,90 L10,90Z" fill="currentColor" opacity=".12"/>
-            </svg>
-          </div>
-          <div class="summary-card card">
-            <div class="card-title">改善サマリー <small>例</small></div>
-            <ul>
-              <li><span>お問い合わせ数</span><b>+56%</b></li>
-              <li><span>Web流入数</span><b>+41%</b></li>
-              <li><span>成約率</span><b>+28%</b></li>
-              <li><span>売上高</span><b>+32%</b></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section problem">
-      <div class="container">
-        <h2>こんなお悩みはありませんか？</h2>
-        <div class="problem-grid">
-          <article class="mini-card">
-            <span class="icon">▤</span>
-            <p>同業他社と同じような<br>提案ばかりで<br>差別化できない</p>
-          </article>
-          <article class="mini-card">
-            <span class="icon">♙</span>
-            <p>AIやWebを導入したいが、<br>社内に推進役がいない</p>
-          </article>
-          <article class="mini-card">
-            <span class="icon">⌘</span>
-            <p>集客・営業・業務改善が<br>部分最適で<br>つながっていない</p>
-          </article>
-          <article class="mini-card">
-            <span class="icon">◇</span>
-            <p>支援会社が競合企業も<br>同時に担当していて<br>不安</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section value" id="service">
-      <div class="container">
-        <h2>SGPは“地域競争で勝つための専属成長パートナー”です</h2>
-        <div class="value-grid">
-          <article class="feature-card">
-            <div class="feature-icon">🤝</div>
-            <h3>競合配慮</h3>
-            <p>直接競合への同時支援を避け、勝ち筋を守る</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">↗</div>
-            <h3>一気通貫</h3>
-            <p>戦略立案からAI実装・Web改善・営業導線設計まで対応</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">⌖</div>
-            <h3>地域密着</h3>
-            <p>仙台圏の商圏特性を踏まえた現実的な成長支援</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section scope" id="area">
-      <div class="container">
-        <h2>独占ではなく、必要な範囲だけ競合配慮</h2>
-        <div class="scope-grid">
-          <article class="scope-card">
-            <span>🔒</span>
-            <h3>完全独占を無制限に約束しない</h3>
-            <p>売上や商圏の現実を踏まえ、過度な制限は設けません。</p>
-          </article>
-          <article class="scope-card">
-            <span>◎</span>
-            <h3>競争優位に関わる支援を限定</h3>
-            <p>集客戦略・LP改善・営業導線・AI活用など、競争に直結する支援を原則限定。</p>
-          </article>
-          <article class="scope-card">
-            <span>⚖</span>
-            <h3>業態・商圏・支援範囲で個別判断</h3>
-            <p>外構元請け・造園・エクステリア販売などの違いも加味して調整します。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section policy" id="policy">
-      <div class="container narrow">
-        <h2>競合配慮方針</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>対象</th>
-                <th>内容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>同一業界</th>
-                <td>外構・建設・不動産 など</td>
-              </tr>
-              <tr>
-                <th>同一業種</th>
-                <td>例：外構元請け、造園、エクステリア販売 など</td>
-              </tr>
-              <tr>
-                <th>同一商圏</th>
-                <td>例：仙台中心部、仙台北、仙台南 など</td>
-              </tr>
-              <tr>
-                <th>限定対象</th>
-                <td class="accent">集客戦略、LP改善、営業導線、AI問い合わせ対応 など</td>
-              </tr>
-              <tr>
-                <th>対象外</th>
-                <td>一般的なWeb保守、社内業務ツール、AI研修 など</td>
-              </tr>
-              <tr>
-                <th>支援方針</th>
-                <td class="accent">競争優位に関わる支援は原則1社限定</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note">※完全独占の可否は、商圏・業態・支援範囲・契約期間により個別判断となります。</p>
-      </div>
-    </section>
-
-    <section class="section segmentation">
-      <div class="container">
-        <h2>たとえば、外構業界なら条件付きでこう分けます</h2>
-        <div class="segment-table">
-          <div class="seg-head">業態</div>
-          <div>外構元請け</div>
-          <div>造園</div>
-          <div>エクステリア販売</div>
-          <div>土木寄り</div>
-          <div>リフォーム外構</div>
-          <div>外構下請け</div>
-          <div class="seg-head">商圏例</div>
-          <div><span>⌂</span>仙台中心部</div>
-          <div><span>♧</span>仙台北</div>
-          <div><span>▣</span>仙台東</div>
-          <div><span>◒</span>仙台南</div>
-          <div><span>⌂</span>仙台西</div>
-          <div><span>♟</span>仙台圏外</div>
-        </div>
-        <div class="adjust-box">
-          <strong>完全な一律独占ではなく、商圏 × 業態 × 支援範囲で調整。</strong>
-          <p>直接競合でなければ、同一業界内でも支援可能なケースがあります。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section plans" id="plans">
-      <div class="container">
-        <h2>支援プラン</h2>
-        <div class="plan-grid">
-          <article class="plan-card">
-            <h3>通常支援</h3>
-            <p class="plan-label">独占なし</p>
-            <p class="price">月<span>10</span>万円〜</p>
-            <ul>
-              <li>基本戦略支援</li>
-              <li>Web改善アドバイス</li>
-              <li>月次ミーティング</li>
-            </ul>
-          </article>
-          <article class="plan-card">
-            <h3>競合配慮支援</h3>
-            <p class="plan-label">直接競合への同時支援を回避</p>
-            <p class="price">月<span>20〜30</span>万円</p>
-            <ul>
-              <li>競合調査・商圏分析</li>
-              <li>AI・Web・営業導線支援</li>
-              <li>月2回の定例ミーティング</li>
-            </ul>
-          </article>
-          <article class="plan-card premium">
-            <div class="ribbon">おすすめ</div>
-            <h3>商圏独占支援</h3>
-            <p class="plan-label">指定商圏・指定業種で1社限定</p>
-            <p class="price">月<span>40〜80</span>万円</p>
-            <ul>
-              <li>専属戦略設計・実行支援</li>
-              <li>AI実装・Web刷新・営業最適化</li>
-              <li>月2回以上の伴走サポート</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section flow" id="flow">
-      <div class="container">
-        <h2>導入の流れ</h2>
-        <div class="flow-grid">
-          <article class="flow-card">
-            <span class="step">1</span>
-            <div class="flow-icon">☏</div>
-            <h3>無料相談</h3>
-            <p>課題やご希望をヒアリングします。</p>
-          </article>
-          <article class="flow-card">
-            <span class="step">2</span>
-            <div class="flow-icon">⌕</div>
-            <h3>商圏・競合確認</h3>
-            <p>商圏・業態・支援範囲を確認し、支援可否を判断。</p>
-          </article>
-          <article class="flow-card">
-            <span class="step">3</span>
-            <div class="flow-icon">☷</div>
-            <h3>支援設計ご提案</h3>
-            <p>最適な支援プランと進め方をご提案します。</p>
-          </article>
-          <article class="flow-card">
-            <span class="step">4</span>
-            <div class="flow-icon">🤝</div>
-            <h3>ご契約・伴走開始</h3>
-            <p>ご契約後、伴走支援をスタートします。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" id="contact">
-      <div class="container">
-        <h2>仙台圏で“競合と同じ支援”を避けたい企業様へ</h2>
-        <p>限定枠には上限があります。まずは商圏・業種・支援範囲を確認のうえ、支援可否をご相談ください。</p>
-        <a class="btn cta-white" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=無料相談の問い合わせ">今すぐ無料相談する</a>
-        <div class="company">合同会社SGP / Sakamoto Growth Partners</div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <small>© Sakamoto Growth Partners</small>
-      <div>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">会社概要</a>
-        <a href="#">特定商取引法に基づく表記</a>
-      </div>
-    </div>
-  </footer>
+<header class="header" id="top"><div class="container header-inner"><a class="brand" href="#top"><b>SGP</b><span>Sakamoto<br>Growth Partners</span></a><nav class="nav"><a href="#about">SGPについて</a><a href="#services">サービス</a><a href="#industries">支援領域</a><a href="#message">代表メッセージ</a><a href="#pricing">料金目安</a><a href="#contact">お問い合わせ</a></nav><a class="cta" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=合同会社SGPへの無料相談">無料相談する</a></div></header>
+<main>
+<section class="hero"><div class="container hero-grid"><div><p class="badge">仙台発 / AI・DX / Web・営業支援 / 経営者の右腕</p><h1>地域企業の成長を、<br>戦略・AI・Web・実行で<br>前に進める。</h1><p class="lead">合同会社SGPは、仙台を拠点に、AI活用・Web改善・業務DX・営業導線設計を一気通貫で支援する成長パートナーです。</p><p class="text">構想だけで終わらせず、現場に入り、成果につながる仕組みを実装します。制作だけ、コンサルだけ、AI導入だけではなく、経営者の構想を売上と仕組みに変える実行部隊として伴走します。</p><div class="actions"><a class="btn primary" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=合同会社SGPへの無料相談">無料相談する</a><a class="btn secondary" href="#services">サービスを見る</a></div></div><div class="visual"><div class="panel main-panel"><div class="panel-head"><span>Growth Operating System</span><b>SGP</b></div><div class="system"><div class="core">Growth</div><div class="orb s">Strategy</div><div class="orb a">AI</div><div class="orb w">Web</div><div class="orb g">Sales</div><div class="orb d">DX</div></div></div><div class="panel mini1"><span>支援スタイル</span><strong>一気通貫</strong><p>戦略 → 実装 → 運用改善</p></div><div class="panel mini2"><span>成長導線</span><strong>売上に接続</strong><svg viewBox="0 0 260 90"><polyline points="10,72 45,60 78,63 112,42 148,47 190,21 238,9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10,72 L45,60 L78,63 L112,42 L148,47 L190,21 L238,9 L238,90 L10,90Z" fill="currentColor" opacity=".12"/></svg></div><div class="panel mini3"><span>重点領域</span><ul><li>外構・エクステリア</li><li>建設・工事業</li><li>不動産・住宅関連</li><li>地域中小企業</li></ul></div></div></div></section>
+<section class="section"><div class="container"><div class="heading"><p class="kicker">Problem</p><h2>成長したいのに、現場が前に進まない。</h2></div><div class="grid cards5"><article class="card"><small>01</small><h3>社長依存</h3><p>判断が社長に集中し、現場が止まる。社長の頭の中にある基準が仕組み化されていない。</p></article><article class="card"><small>02</small><h3>Web集客の弱さ</h3><p>ホームページ・LP・SNSがあるだけで、問い合わせや受注につながる導線になっていない。</p></article><article class="card"><small>03</small><h3>AI活用の停滞</h3><p>ChatGPTは触っているが、実際の業務改善・営業改善・社内運用まで落ちていない。</p></article><article class="card"><small>04</small><h3>業務の属人化</h3><p>見積・問い合わせ・営業対応・資料作成が人に依存し、拡大するほど現場が苦しくなる。</p></article><article class="card"><small>05</small><h3>支援会社の分断</h3><p>制作会社、広告会社、システム会社、コンサル会社が分かれ、全体最適になっていない。</p></article></div></div></section>
+<section class="section split-section" id="about"><div class="container split"><div><p class="kicker">About SGP</p><h2>SGPは、経営者の構想を現場で動く仕組みに変える会社です。</h2></div><div><p>Webサイト、AIツール、業務システム、営業資料。それぞれを単体で整えるだけでは、事業は大きく前に進みません。</p><p>必要なのは、経営課題を整理し、顧客導線を設計し、現場業務に落とし込み、改善を回し続けること。</p><p>SGPは、戦略と実装のあいだに入り、地域企業の成長を支援します。</p></div></div></section>
+<section class="section alt value"><div class="container"><div class="heading"><p class="kicker">Value</p><h2>SGPは、戦略と実装のあいだを埋める会社です。</h2></div><div class="grid cards3"><article class="card"><div class="value-icon">S</div><h3>Strategy</h3><p>経営課題・商圏・競合・顧客導線を整理し、成長の打ち手を設計します。</p></article><article class="card"><div class="value-icon">G</div><h3>Growth</h3><p>Web・LP・営業導線を改善し、問い合わせ・商談・受注に接続します。</p></article><article class="card"><div class="value-icon">P</div><h3>Product</h3><p>AI・システム・業務改善を実装し、現場で使われる仕組みに落とし込みます。</p></article></div></div></section>
+<section class="section" id="services"><div class="container"><div class="heading"><p class="kicker">Services</p><h2>AI・Web・営業・業務改善を、売上につながる一つの流れに。</h2></div><div class="grid cards3"><article class="card service featured"><span class="tag">Core Service</span><h3>社長の右腕AI</h3><p>社長の判断基準・業務知見・営業ノウハウをAIと仕組みに落とし込み、現場で再現できる状態をつくります。</p></article><article class="card service"><span class="tag">Competitive Growth</span><h3>競合配慮型AI/DX支援</h3><p>直接競合への同時支援を避けながら、地域内での競争優位を守るAI・Web・営業支援を行います。</p></article><article class="card service"><span class="tag">Web Marketing</span><h3>Webマーケティング / LP改善</h3><p>ホームページ、LP、広告導線、問い合わせ導線を見直し、売上につながるWeb導線を設計します。</p></article><article class="card service"><span class="tag">AI / DX</span><h3>業務DX / AI実装支援</h3><p>問い合わせ対応、見積作成、営業資料、社内ナレッジ、業務フローをAIとシステムで効率化します。</p></article><article class="card service"><span class="tag">FDE</span><h3>FDE / 右腕実行支援</h3><p>PMよりも現場に入り、要件整理・実装・改善・関係者調整まで担う実行型支援を行います。</p></article><article class="card service"><span class="tag">Growth Partner</span><h3>月額伴走支援</h3><p>経営課題、Web改善、AI活用、営業導線、業務改善を月次で継続的に改善します。</p></article></div></div></section>
+<section class="section alt" id="industries"><div class="container"><div class="heading"><p class="kicker">Industries</p><h2>重点支援領域</h2></div><div class="grid cards4"><article class="card"><small>01</small><h3>外構・エクステリア</h3><p>商圏性が強く、Web・営業導線改善と相性が良い領域。問い合わせから見積・提案までの改善余地が大きい。</p></article><article class="card"><small>02</small><h3>建設・工事業</h3><p>写真・図面・現場情報・見積・問い合わせ対応など、非構造データと業務DXの余地が大きい。</p></article><article class="card"><small>03</small><h3>不動産・住宅関連</h3><p>法務・営業・契約・Web集客・業務整理が複合的に絡むため、AI/DXと相性が良い。</p></article><article class="card"><small>04</small><h3>地域中小企業</h3><p>社内にAI/DX推進役が不在になりやすく、経営者の右腕としての伴走支援ニーズがある。</p></article></div></div></section>
+<section class="section"><div class="container"><div class="heading"><p class="kicker">Difference</p><h2>制作だけでも、コンサルだけでも終わらない。</h2></div><div class="compare"><div class="head">一般的な支援会社</div><div class="head right">SGP</div><div>ホームページだけ作る</div><div>売上導線まで設計する</div><div>AIツールだけ紹介する</div><div>業務フローに組み込む</div><div>戦略だけ提案する</div><div>実装・運用まで伴走する</div><div>担当領域が分断される</div><div>経営・Web・AI・営業を一気通貫で見る</div><div>競合支援も同時に行う</div><div>直接競合への支援は配慮する</div></div></div></section>
+<section class="section message" id="message"><div class="container split"><div class="card"><p class="kicker">Message</p><h2>代表メッセージ</h2><p>合同会社SGP 代表社員<br><strong style="font-size:28px">坂本 直哉</strong></p></div><div class="message-body"><p>私たちは、単なる制作会社でも、AIツールの導入会社でもありません。</p><p>経営者が考えている構想、現場に眠っている課題、顧客に届いていない価値を整理し、売上や業務改善につながる仕組みとして実装する会社です。</p><p>地方企業には、技術が足りないのではなく、経営と現場とデジタルをつなぐ「推進役」が不足していると感じています。</p><p>SGPは、その推進役として、戦略から実行まで伴走します。</p></div></div></section>
+<section class="section alt" id="pricing"><div class="container"><div class="heading"><p class="kicker">Pricing</p><h2>料金目安</h2><p>課題・商圏・支援範囲に応じて個別見積もりとなります。</p></div><div class="grid cards5"><article class="card price"><h3>初回診断</h3><p>課題整理・AI/Web活用診断</p><strong>5万〜10万円</strong></article><article class="card price"><h3>Web/LP改善</h3><p>LP制作・導線改善・分析</p><strong>30万〜150万円</strong></article><article class="card price"><h3>AI/DX導入支援</h3><p>業務整理・AI実装・運用設計</p><strong>50万〜300万円</strong></article><article class="card price"><h3>月額伴走支援</h3><p>戦略・改善・実行支援</p><strong>月10万〜80万円</strong></article><article class="card price"><h3>FDE/右腕支援</h3><p>代表直下の実行支援</p><strong>応相談</strong></article></div></div></section>
+<section class="section"><div class="container"><div class="heading"><p class="kicker">Company</p><h2>会社概要</h2></div><div class="company-table"><div class="row"><b>会社名</b><span>合同会社SGP / Sakamoto Growth Partners</span></div><div class="row"><b>所在地</b><span>宮城県仙台市を拠点に活動</span></div><div class="row"><b>代表</b><span>坂本 直哉</span></div><div class="row"><b>事業内容</b><span>AI/DX支援、Web改善、営業導線設計、業務改善、FDE/右腕支援</span></div><div class="row"><b>お問い合わせ</b><span><a href="mailto:naoya.sakamoto@sakamoto-growth-partners.com">naoya.sakamoto@sakamoto-growth-partners.com</a></span></div></div></div></section>
+<section class="final" id="contact"><div class="container"><p class="kicker">Contact</p><h2>社長の構想を、売上につながる仕組みに変える。</h2><p>AI活用、Web改善、営業導線、業務DX、右腕支援について、まずは現在の課題をお聞かせください。</p><div class="actions" style="justify-content:center"><a class="btn white" href="mailto:naoya.sakamoto@sakamoto-growth-partners.com?subject=合同会社SGPへの無料相談">無料相談する</a><a class="btn outline" href="#services">サービスを見る</a></div></div></section>
+</main><footer class="footer"><div class="container footer-inner"><small>© Sakamoto Growth Partners</small><div><a href="#about">SGPについて</a><a href="#services">サービス</a><a href="#industries">支援領域</a><a href="#contact">お問い合わせ</a></div></div></footer>
 </body>
 </html>
